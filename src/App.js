@@ -1,12 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import DetailedOrder from "./modules/DetailedOrder";
 
 function App() {
   return (
-    <div className="App">
-      <p>Clean The Project</p>
-    </div>
+    <DetailedOrder/>
   );
 }
+
+
 
 export default App;
