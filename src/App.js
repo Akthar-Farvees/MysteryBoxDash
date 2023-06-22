@@ -3,6 +3,8 @@ import Orders from "./modules/Orders";
 import { Route, Routes } from "react-router-dom";
 import { Layout, Image, Space } from "antd";
 import imageSrc from './assests/images/MB Logo.png';
+import SideMenu from './../src/modules/SideMenu/index';
+
 
 
 const { Sider, Content, Footer } = Layout;
@@ -13,6 +15,8 @@ function App() {
     <Layout>
       <Sider style={{ height: '100vh', backgroundColor: "white" }}>
         <Image src={imageSrc} preview={false} />
+
+        <SideMenu />
       </Sider>
       <Layout>
         <Content style={{  }}>
