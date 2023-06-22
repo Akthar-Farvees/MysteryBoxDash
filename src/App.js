@@ -1,12 +1,7 @@
-import DetailedOrder from "./modules/DetailedOrder";
-import Orders from "./modules/Orders";
-import RestaurantMenu from '../src/modules/RestaurantMenu/index.js';
-import  CreateMenuItem from '../src/modules/CreateMenuItem/index';
-import  OrderHistory from '../src/modules/OrderHistory/index';
-import { Route, Routes } from "react-router-dom";
-import { Layout, Image, Space } from "antd";
+import AppRoutes from '../src/Components/AppRoutes/index'
+import { Layout, Image } from "antd";
 import imageSrc from './assests/images/MB Logo.png';
-import SideMenu from './../src/modules/SideMenu/index';
+import SideMenu from '../src/Components/SideMenu/index';
 
 
 
@@ -23,13 +18,7 @@ function App() {
       </Sider>
       <Layout>
         <Content style={{  }}>
-          <Routes>
-            <Route path="" element={<Orders />} />
-            <Route path="order/:id" element={<DetailedOrder />} />
-            <Route path="menu" element={<RestaurantMenu/>} />
-            <Route path="menu/create" element={<CreateMenuItem/>} />
-            <Route path="order-history" element={<OrderHistory/>} />
-          </Routes>
+         <AppRoutes/>
         </Content>
         <Footer style={{ textAlign: 'center'}}>
           &copy; 2023 Mystery Box. All rights reserved.<br />
