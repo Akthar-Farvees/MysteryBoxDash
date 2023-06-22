@@ -2,12 +2,19 @@
       background-color: #FFE030 !important;
       border-color: #FFE030 !important;
       color: black;
+      
 }
 
 .ant-btn-primary:hover {
   background-color: #ffec80 !important;
   border-color: #ffec80 !important;
   color: black !important;
+}
+
+.ant-btn-primary-active {
+  background-color: #FFE030 !important;
+  border-color: #FFE030 !important;
+  color: black;
 }
 
 .ant-btn-danger {
