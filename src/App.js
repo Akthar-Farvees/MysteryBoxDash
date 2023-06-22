@@ -1,6 +1,8 @@
 import DetailedOrder from "./modules/DetailedOrder";
 import Orders from "./modules/Orders";
 import RestaurantMenu from '../src/modules/RestaurantMenu/index.js';
+import  CreateMenuItem from '../src/modules/CreateMenuItem/index';
+import  OrderHistory from '../src/modules/OrderHistory/index';
 import { Route, Routes } from "react-router-dom";
 import { Layout, Image, Space } from "antd";
 import imageSrc from './assests/images/MB Logo.png';
@@ -25,6 +27,8 @@ function App() {
             <Route path="" element={<Orders />} />
             <Route path="order/:id" element={<DetailedOrder />} />
             <Route path="menu" element={<RestaurantMenu/>} />
+            <Route path="menu/create" element={<CreateMenuItem/>} />
+            <Route path="order-history" element={<OrderHistory/>} />
           </Routes>
         </Content>
         <Footer style={{ textAlign: 'center'}}>
