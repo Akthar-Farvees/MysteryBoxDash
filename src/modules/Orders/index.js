@@ -2,8 +2,11 @@ import React from 'react'
 import orders from '../../assests/data/orders.json';
 import { Card, List, Table, Tag } from 'antd';
 import '../../index.css';
+import { useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 const Orders = () => {
+    const navigate =  useNavigate();
     const renderOrderStatus = (orderStatus) => {
         if (orderStatus === "Accepted"){
             return <Tag color={'green'}>{orderStatus}</Tag>
@@ -49,6 +52,9 @@ const Orders = () => {
         dataSource={orders}
         columns={dataColumns}
         rowKey = "orderID"
+        onRow={(orderItem) => ({
+            onClick: () => navigate(`order/${orderItem.orderID}`)
+        })}
         />
     </Card>
   )
