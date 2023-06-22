@@ -26,6 +26,19 @@ li.ant-pagination-item-active a {
   color: #FFE030 !important;
 }
 
+.ant-menu-item-selected {
+  background-color: #FFE030 !important; 
+ 
+}
+
+.ant-menu-item-selected span {
+  color: black;
+  font-weight: 550;
+}
+
+.ant-menu-item-active:hover {
+  color: #edc900 !important;
+}
 
 
 body {
