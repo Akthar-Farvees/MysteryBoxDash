@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card, List, Divider, Button, Descriptions } from "antd";
 import dishes from '../../assests/data/dishes.json'
+import '../../index.css';
 
 const DetailedOrder  = () =>  {
     return(
@@ -30,7 +31,7 @@ const DetailedOrder  = () =>  {
     <Divider/>
 
     <div style={styles.buttonsContainer}>
-      <Button block type="ghost" size="large" style={styles.button1} >Decline Order</Button>
+      <Button block type="danger" size="large" style={styles.button1} >Decline Order</Button>
       <Button block type="primary" size="large" style={styles.button2}>Accept Order</Button>
     </div>
 
@@ -60,23 +61,13 @@ const styles = {
     button1: {
       marginRight: 20,
       marginLeft: 20,
-      backgroundColor: 'red',
-      color: 'white',
-      borderColor: 'red',
   
     },
     button2: {
       marginLeft: 20,
       marginRight: 20,
-      backgroundColor: '#FFE030',
-      color: 'black',
-      borderColor: '#FFE030',
+     
     },
-    btnFinal: {
-      backgroundColor: '#FFE030',
-      color: 'black',
-      borderColor: '#FFE030',
-    }
   }
   
 
