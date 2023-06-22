@@ -4,11 +4,11 @@
       color: black;
 }
 
-/* .ant-btn-primary:hover {
+.ant-btn-primary:hover {
   background-color: #ffec80 !important;
   border-color: #ffec80 !important;
-  color: white !important;
-} */
+  color: black !important;
+}
 
 .ant-btn-danger {
   background-color: rgb(255, 52, 52) !important;
@@ -16,6 +16,12 @@
   color: white;
 }
 
+
+.ant-btn-danger:hover {
+  background-color: rgb(255, 80, 80) !important;
+  border-color: rgb(255, 80, 80) !important;
+  color: white;
+}
 
 
 .ant-pagination-item-active {
