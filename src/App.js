@@ -12,7 +12,7 @@ function App() {
 
     <Layout>
       <Sider style={{ height: '100vh', backgroundColor: "white" }}>
-        <Image src={imageSrc} preview={false} />
+        <Image src={imageSrc} preview={false} width={'100%'}/>
 
         <SideMenu />
       </Sider>
